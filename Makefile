@@ -1,7 +1,7 @@
 # vim: noexpandtab:syntax=make
 CWD	=$(shell pwd)
 PYTHON3_LIB_DIR ="/usr/lib/python3/dist-packages"
-PYTHON3_MODULE_NAME=saga
+PYTHON3_MODULE_NAME=eda
 
 
 clean:
