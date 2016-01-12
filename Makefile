@@ -19,3 +19,13 @@ links:
 
 purge:
 	rm -rf $(PYTHON3_LIB_DIR)/$(PYTHON3_MODULE_NAME)
+
+
+bump:
+	git add $(CWD)/$(PYTHON3_MODULE_NAME)/__init__.py
+	git commit -m "bump version"
+
+
+upload:
+	python3 $(CWD)/setup.py sdist upload
+	make clean
