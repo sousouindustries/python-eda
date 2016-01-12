@@ -18,6 +18,7 @@ The module provides the following major features:
 -   An interface specification of the enterprise message bus; allowing
     additional, more mature implementations (using for example, Apache
     Apollo).
+-   A framework to quickly prototype and deploy services.
 
 
 Installation
