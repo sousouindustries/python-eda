@@ -8,6 +8,18 @@ The Python ``eda`` module provides a framework to create Python applications
 in Event-Driven Architectures (EDAs).
 
 
+Features
+--------
+The module provides the following major features:
+
+-   A syntax to declaratively specify event types and their structure.
+-   Local implementations of an enterprise message bus, using threads
+    (for single-process architectures) or processes.
+-   An interface specification of the enterprise message bus; allowing
+    additional, more mature implementations (using for example, Apache
+    Apollo).
+
+
 Installation
 ------------
 To install ``eda``, run the following command in your terminal:
