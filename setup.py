@@ -38,7 +38,6 @@ setup(
     author_email='cochise.ruhulessin@sousouindustries.com',
     description=MODULE_DESC,
     long_description=MODULE_LONG,
-    license='Apache Licence 2.0',
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
     include_package_data=True,
     zip_safe=False,
