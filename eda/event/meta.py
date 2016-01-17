@@ -1,5 +1,5 @@
-from eda.fields import Field
-from eda.fields import Adapter
+from eda.dto import Field
+from eda.dto import Adapter
 
 
 class EventMeta(type):
