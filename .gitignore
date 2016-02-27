@@ -1,6 +1,6 @@
 # Misc
 *.swp # vi swap files
-debian/python3-libsousou/
+debian/python3-eda/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

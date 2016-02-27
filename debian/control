@@ -1,0 +1,17 @@
+Source: python-eda
+Section: libs
+Priority: optional
+Maintainer: Sousou Industries Releases <releases@sousouindustries.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://www.sousouindustries.com
+
+
+Package: python3-eda
+Architecture: any
+Depends:
+    python3,
+    python3-marshmallow
+Description: Event Driven Architecture Framework
+ A framework to create Python applications in event-driven
+ architectures.

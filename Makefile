@@ -29,3 +29,11 @@ bump:
 upload:
 	python3 $(CWD)/setup.py sdist upload
 	make clean
+
+
+deb:
+	dpkg-buildpackage -rfakeroot -b
+
+
+devpackage:
+	dpkg-buildpackage -rfakeroot -b -us -uc
