@@ -2,7 +2,10 @@
 
 
 class Event:
-    RESERVED = set(['event_type','metadata'])
+    RESERVED = set(['event_type','metadata','RESERVED','_params','_event_type'])
+    _event_type = None
+    _params = None
+    _initialized = False
 
     @property
     def event_type(self):
@@ -11,6 +14,17 @@ class Event:
     def __init__(self, event_type, params):
         self._event_type = event_type
         self._params = params
+        self._initialized = True
+
+    def __setattr__(self, attname, value):
+        if self._initialized:
+            raise AttributeError('{0} objects are immutable.'.format(self._event_type))
+        super(Event, self).__setattr__(attname, value)
+
+    def __getattr__(self, attname):
+        if attname not in (set(self._params.keys()) | self.RESERVED):
+            raise AttributeError(attname)
+        return self._params[attname]
 
     def __repr__(self):
         params = ', '.join(
