@@ -1,5 +1,5 @@
-from eda import event
+from eda.event import events
 
 
 def get_version():
-    return '1.0.0alpha3'
+    return '1.0.0alpha4'

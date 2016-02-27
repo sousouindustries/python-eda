@@ -1,1 +1,1 @@
-from eda.event.base import Event
+from eda.event.base import events
