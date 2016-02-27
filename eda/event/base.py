@@ -2,7 +2,11 @@
 
 
 class Event:
-    RESERVED = set(['_event_type','metadata'])
+    RESERVED = set(['event_type','metadata'])
+
+    @property
+    def event_type(self):
+        return self._event_type
 
     def __init__(self, event_type, params):
         self._event_type = event_type
