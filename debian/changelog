@@ -1,5 +1,5 @@
-python-eda (1.0.0-1) unstable; urgency=low
+python-eda (1.0.0ubuntu1) stable; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release.
 
- -- Sousou Industries Releases <releases@sousouindustries.com>  Sun, 28 Feb 2016 00:01:03 +0100
+ -- Sousou Industries Releases <releases@sousouindustries.com>  Sun, 28 Feb 2016 00:06:36 +0100
