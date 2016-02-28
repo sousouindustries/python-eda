@@ -1,13 +1,17 @@
+from libsousou.meta import hybrid_property
 
+from eda.exc import UnexpectedEventFormat
 
 
 class Event:
-    RESERVED = set(['event_type','metadata','RESERVED','_params','_event_type'])
+    RESERVED = set([
+        'event_type','metadata','RESERVED','_params','_event_type',
+        'event_id','event_timestamp'])
     _event_type = None
     _params = None
     _initialized = False
 
-    @property
+    @hybrid_property
     def event_type(self):
         return self._event_type
 
@@ -23,7 +27,7 @@ class Event:
 
     def __getattr__(self, attname):
         if attname not in (set(self._params.keys()) | self.RESERVED):
-            raise AttributeError(attname)
+            raise UnexpectedEventFormat(attname)
         return self._params[attname]
 
     def __repr__(self):
@@ -37,6 +41,10 @@ class EventFactory:
     exposing the path of the identifier as attributes, similar to
     the :func:`func()` function in :mod:`sqlalchemy`.
     """
+
+    @property
+    def event_type(self):
+        return self.path
 
     def __init__(self, path=None):
         self.path = path

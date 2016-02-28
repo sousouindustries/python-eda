@@ -1,0 +1,5 @@
+
+
+
+class UnexpectedEventFormat(AttributeError):
+    pass
