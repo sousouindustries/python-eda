@@ -1,3 +1,9 @@
+python-eda (1.0.0ubuntu3) stable; urgency=medium
+
+  * Added python-libsousou as a dependency.
+
+ -- Sousou Industries Releases <releases@sousouindustries.com>  Sun, 28 Feb 2016 03:02:04 +0100
+
 python-eda (1.0.0ubuntu2) unstable; urgency=medium
 
   * Added the eda.event module.

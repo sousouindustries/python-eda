@@ -11,7 +11,8 @@ Package: python3-eda
 Architecture: any
 Depends:
     python3,
-    python3-marshmallow
+    python3-marshmallow,
+    python3-libsousou
 Description: Event Driven Architecture Framework
  A framework to create Python applications in event-driven
  architectures.
