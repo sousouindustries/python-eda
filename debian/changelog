@@ -1,3 +1,9 @@
+python-eda (1.0.0ubuntu2) unstable; urgency=medium
+
+  * Added the eda.event module.
+
+ -- Sousou Industries Releases <releases@sousouindustries.com>  Sun, 28 Feb 2016 02:52:08 +0100
+
 python-eda (1.0.0ubuntu1) stable; urgency=medium
 
   * Initial release.

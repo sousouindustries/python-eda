@@ -4,4 +4,4 @@ from eda import exc
 
 
 def get_version():
-    return '1.0.0alpha4'
+    return '1.0.0alpha5'
