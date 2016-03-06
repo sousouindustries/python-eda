@@ -1,3 +1,9 @@
+python-eda (1.0.0ubuntu5) stable; urgency=medium
+
+  * Minor code changes.
+
+ -- Sousou Industries Releases <releases@sousouindustries.com>  Sun, 06 Mar 2016 18:16:49 +0000
+
 python-eda (1.0.0ubuntu3) stable; urgency=medium
 
   * Added python-libsousou as a dependency.
