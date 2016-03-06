@@ -3,6 +3,7 @@ from libsousou.meta import hybrid_property
 
 class EventHandler:
     _handles = set()
+    ANY = '*'
 
     @hybrid_property
     def events(self):
@@ -18,7 +19,7 @@ class EventHandler:
         return True
 
     def handle(self, event):
-        pass
+        raise NotImplementedError("Subclasses must override this method.")
 
 
 class AnyEventHandler(EventHandler):
@@ -26,7 +27,14 @@ class AnyEventHandler(EventHandler):
     event.
     """
 
+    @hybrid_property
+    def events(self):
+        return self.ANY
+
     def is_valid_event(self, event):
+        """Return a boolean indicating if the handler can process the given
+        `event`, based on its type.
+        """
         return True
 
 
