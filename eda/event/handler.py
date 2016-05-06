@@ -13,7 +13,7 @@ class EventHandler:
         """Return a boolean indicating if the handler can process the given
         `event`, based on its type.
         """
-        return event.event_type in self._handles
+        return event.event_type in self.events
 
     def can_handle(self, event):
         return True
